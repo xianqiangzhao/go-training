@@ -2,16 +2,19 @@ package main
 
 import "fmt"
 
+func f( result int) int {
+    defer func() {
+        result += 1
+    }()
+    return result
+}
 func main() {
     fmt.Println("counting")
 
     for i := 0; i < 10; i++ {
-        defer fmt.Println(i)
+          fmt.Println(i)
     }
-
-    fmt.Println("done")
-    for {
-        defer fmt.Println("in for ...")
-    }
+     
+    fmt.Println(f(11))
 
 }
