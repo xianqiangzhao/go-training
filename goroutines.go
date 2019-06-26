@@ -3,6 +3,7 @@ package main
 import (
     "fmt"
     "time"
+    "runtime"
 )
 
 func say(s string) {
@@ -13,6 +14,19 @@ func say(s string) {
 }
 
 func main() {
-    go say("hello")
-    say("world")
+    //go say("hello")
+    //say("world")
+    var a [10]int
+    for i := 0; i < 10; i++ {
+        go func(i int){
+            for {
+                //fmt.Printf("Hello from " +  "goroutines %d \n ", i)
+                a[i]++
+                runtime.Gosched()
+            }
+        }(i)
+    }
+    time.Sleep(time.Millisecond)
+    fmt.Println(a)
+    
 }
