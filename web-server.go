@@ -16,7 +16,7 @@ func (h Hello) ServeHTTP(
 
 func main() {
     var h Hello
-    err := http.ListenAndServe("localhost:4000", h)
+    err := http.ListenAndServe(":8080", h)
     if err != nil {
         log.Fatal(err)
     }
