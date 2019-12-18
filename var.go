@@ -1,19 +1,21 @@
 package main
 
 import "fmt"
- var (
+
+var (
 	pi = 3.14
 )
+
 func definevar() {
 	var i int = 33
-	var a,b,c,d =  1,2,3,"aaa"
-	fmt.Println(i, a,b,c,d, pi)
+	var a, b, c, d = 1, 2, 3, "aaa"
+	fmt.Println(i, a, b, c, d, pi)
 	fmt.Printf("%d %d %d %s %f \n", a, b, c, d, pi)
 
 }
 
-func  constvar(){
-	const(
+func constvar() {
+	const (
 		b = 1 << (10 * iota)
 		kb
 		mb
@@ -23,7 +25,7 @@ func  constvar(){
 	)
 	fmt.Println(b, kb, mb, gb, tb, pb)
 }
-func  getGrade(score int) string {
+func getGrade(score int) string {
 	result := ""
 	switch {
 	case score < 0 || score > 100:

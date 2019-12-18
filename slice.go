@@ -2,22 +2,22 @@ package main
 
 import "fmt"
 
-func update_arr(a[6] int, up int) {
-    a[2] = up
+func update_arr(a [6]int, up int) {
+	a[2] = up
 }
 
-func update_slice(a[] int, up int) {
-    a[2] = up
+func update_slice(a []int, up int) {
+	a[2] = up
 }
 
 func main() {
-    primes := [6]int{2, 3, 5, 7, 11, 13}
-    var s []int = primes[1:4]
-    update_arr(primes, 200)
-    fmt.Println(primes)
-    update_slice(s,300)
-    fmt.Println(len(s), cap(s), s)
-    fmt.Println(len(primes), cap(primes), primes)
+	primes := [6]int{2, 3, 5, 7, 11, 13}
+	var s []int = primes[1:4]
+	update_arr(primes, 200)
+	fmt.Println(primes)
+	update_slice(s, 300)
+	fmt.Println(len(s), cap(s), s)
+	fmt.Println(len(primes), cap(primes), primes)
 }
 
 /* result

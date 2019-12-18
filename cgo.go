@@ -1,4 +1,5 @@
 package main
+
 /*
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,6 +8,7 @@ printf("Hello, World!\n");
 }
 */
 import "C"
+
 func main() {
-C.hello()
+	C.hello()
 }
