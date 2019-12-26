@@ -1,6 +1,6 @@
 aaa
 package main
-
+bbb
 import "fmt"
 
 func main() {
