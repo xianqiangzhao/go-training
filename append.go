@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 aaa
+=======
+ddd
+>>>>>>> b9189eadcef5fb26126f908a8f912ee35dce9fe9
 package main
 bbb
 import "fmt"
