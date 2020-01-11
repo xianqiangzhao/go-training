@@ -1,5 +1,19 @@
-package main
+new to new 
+111
+>>>>>>> 16ac78e21dff426dbeedc600dd38817ba4ada2bc
+old
+<<<<<<< HEAD
 
+=======
+news
+<<<<<<< HEAD
+>>>>>>> cc641962a7f45d6ba3b99a16549d08c4f253d36b
+aaa
+=======
+ddd
+>>>>>>> b9189eadcef5fb26126f908a8f912ee35dce9fe9
+package main
+bbb
 import "fmt"
 
 func main() {
